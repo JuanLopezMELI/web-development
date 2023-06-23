@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700&family=Julius+Sans+One:wght@400;700&family=Source+Sans+3&display=swap");
+
+:root {
+  --non-photo-blue: #9ad1d4ff;
+  --rich-black: #07141bff;
+  --yale-blue: #103573ff;
+  --steel-blue: #457aa2ff;
+  --night: #051210;
+  --oxford-blue: #0b1c30ff;
+
+  --title-font: "Julius Sans One", sans-serif;
+  --paragraph-font: "Source Sans 3", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 20px;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+}
+
+h1 {
+  font-family: var(--title-font);
+  font-weight: 700;
+}
+
+.home-header {
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  width: 95%;
+  height: 90%;
+  z-index: 1;
+}
+
+.home-navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-navbar>ul {
+  list-style-type: none;
+}
+
+.home-navbar-item>a {
+  text-decoration: none;
+  color: var(--non-photo-blue);
+  font-family: var(--paragraph-font);
+  font-size: 1.5rem;
+}
+
+.home-navbar-item-link:hover {
+  color: var(--steel-blue);
+}
+
+.hero-section {
+  width: 100vw;
+  height: 100vh;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: absolute;
+  top: 45%;
+  padding-left: 10%;
+  color: var(--non-photo-blue);
+}
+
+.hero-title {
+  font-size: 3.5rem;
+}
+
+.hero-paragraph {
+  font-size: 1.6rem;
+  font-family: var(--paragraph-font);
+}
+
+.home-middle-section {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--non-photo-blue);
+}
+
+.home-middle-section img {
+  padding-inline-start: 5%;
+}
+
+.home-middle-section p {
+  font-family: var(--paragraph-font);
+  font-size: 1.2rem;
+  text-align: justify;
+  padding-inline: 5%;
+  color: var(--rich-black);
+  font-weight: bold;
+}
+
+.home-bottom-section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.something-about-photo {
+  width: 30%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.something-about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--oxford-blue);
+}
+
+.something-about-container h2 {
+  margin-bottom: 7%;
+  margin-left: 10%;
+  font-size: 2rem;
+  font-family: var(--title-font);
+  color: var(--non-photo-blue);
+}
+
+.something-about-paragraph-container {
+  text-align: justify;
+  padding-left: 20%;
+  margin-right: 10%;
+}
+
+.something-about-paragraph {
+  margin-block: 2%;
+  font-family: var(--paragraph-font);
+  font-weight: bold;
+  color: var(--non-photo-blue);
+}
+
+footer {
+  background-color: var(--non-photo-blue);
+}
+
+.footer-paragraph {
+  font-size: 1.2rem;
+  font-family: var(--paragraph-font);
+  font-weight: bold;
+  padding-block: 2%;
+  margin-left: 2%;
+  color: var(--rich-black);
+}
+
+.social-icons-container {
+  display: flex;
+  justify-content: right;
+}
+
+.social-icons-container a {
+  margin-inline-end: 3%;
+  margin-bottom: 2%;
+  width: 3%;
+  filter: invert(0%);
+}
+
+.social-icon:hover {
+  filter: brightness(0) saturate(100%) invert(10%) sepia(7%) saturate(6777%) hue-rotate(175deg) brightness(90%) contrast(97%);
+}
+
+.hero-section,
+.home-middle-section,
+.home-bottom-section,
+footer {
+  scroll-snap-align: center;
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: end;
+  list-style-type: none;
+}
+
+.navbar-item {
+  margin-inline: 2%;
+  margin-block: 1%;
+  font-family: var(--paragraph-font);
+}
+
+.navbar-item a {
+  text-decoration: none;
+  color: var(--oxford-blue);
+}
+
+.navbar-item a:hover {
+  color: var(--steel-blue);
+}
+
+.projects-hero {
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+.projects-hero-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--non-photo-blue);
+  color: var(--oxford-blue);
+}
+
+.projects-hero-section p,
+.projects-hero-section h1 {
+  margin-inline: 5%;
+}
+
+.projects-hero-section p {
+  font-family: var(--paragraph-font);
+}
