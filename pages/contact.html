@@ -1,60 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/index.css">
+  <title>Contactme</title>
 </head>
+
 <body>
-    <header>
-        <nav class="navbar">
-          <ul>
-            <li class="navbar-item">
-              <a href="../index.html">Home</a>
-            </li>
-            <li class="navbar-item">
-              <a href="./projects.html">Projects</a>
-            </li>
-            <li class="navbar-item">
-              <a href="./skills.html">Skills</a>
-            </li>
-            <li class="navbar-item">
-              <a href="./about.html">About</a>
-            </li>
-            <li class="navbar-item">
-              <a href="#main-section">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li class="navbar-item">
+          <a href="../index.html">Home</a>
+        </li>
+        <li class="navbar-item">
+          <a href="./projects.html">Projects</a>
+        </li>
+        <li class="navbar-item">
+          <a href="./skills.html">Skills</a>
+        </li>
+        <li class="navbar-item">
+          <a href="./about.html">About</a>
+        </li>
+        <li class="navbar-item">
+          <a href="#main-section">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-      <main class="main-section" id="main-section">
-        <div>
-          <p></p>
-        </div>
-  
-        <div>
-          <img class="social-icon" src="./img/instagram.png" alt="instagram icon"/>
-          <img class="social-icon" src="./img/linkedin.png" alt="linkedin icon" />
-          <img class="social-icon" src="./img/github.png" alt="github icon" />
-        </div>
-      </main>
+  <main class="contact-main-section" id="main-section">
+    <div>
+      <p>If you would like to join the amazing experience of working with me, reach me out below. I will get i touch
+        soon!</p>
+    </div>
 
-      <footer class="footer" id="footer">
-        <form action="">
-          <label for="name">Your name</label>
-          <input type="text" id="name" name="name" placeholder="Example name">
+    <div class="social-icons-container">
+      <a href="https://www.instagram.com/" target="_blank">
+        <i class="bi bi-instagram fs-2"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/juan-lopez-636b8a1a6/" target="_blank">
+        <i class="bi bi-linkedin fs-2"></i>
+      </a>
+      <a href="https://github.com/" target="_blank">
+        <i class="bi bi-github fs-2"></i>
+      </a>
+    </div>
+  </main>
 
-          <label for="email">Your email</label>
-          <input type="text" id="email" name="email" placeholder="example@example.com">
+  <footer class="contact-footer" id="footer">
+    <form action="">
+      <div>
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" placeholder="John Doe">
+      </div>
 
-          <label for="message">Your message</label>
-          <textarea id="message" name="message" placeholder="Leave your message here">
+      <div>
+        <label for="email">Your email</label>
+        <input type="text" id="email" name="email" placeholder="John@doe.com">
+      </div>
 
-          <input type="Send" value="Send">
-        </form>
+      <div>
+        <label for="message">Your message</label>
+        <textarea id="message" name="message" placeholder="I want you to work with us..."></textarea>
+      </div>
 
-        <img src="" alt="">
-      </footer>
+      <div>
+        <button type="submit">Send</button>
+      </div>
+    </form>
+    <img src="../img/young-programmer.jpg" alt="" />
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
