@@ -554,6 +554,19 @@ header .navbar ul .navbar-item a:hover {
     justify-content: center;
   }
 
+  .main-section .hero-section .hero-video {
+    display: none;
+  }
+
+  .main-section .hero-section .hero-video-mobile {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+
   .main-section .home-middle-section {
     flex-direction: column;
     align-items: center;
