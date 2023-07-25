@@ -72,6 +72,10 @@ h1 {
   object-fit: cover;
 }
 
+.main-section .hero-section .hero-video-mobile {
+  display: none;
+}
+
 .main-section .hero-section .hero-content {
   position: absolute;
   top: 45%;
@@ -173,6 +177,7 @@ footer .social-icons-container {
 
 footer .social-icons-container a i {
   color: var(--oxford-blue);
+  font-size: 50px;
 }
 
 footer .social-icons-container a i:hover {
@@ -493,4 +498,91 @@ header .navbar ul .navbar-item a:hover {
   border-radius: 5px;
   border: none;
   font-family: var(--paragraph-font);
+}
+
+@media screen and (max-width:1170px) {
+  .main-section .home-bottom-section {
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .main-section .home-bottom-section .something-about-photo {
+    display: none;
+  }
+
+  .main-section .home-bottom-section .something-about-container .something-about-title {
+    margin-top: 5%;
+  }
+
+  .main-section .home-bottom-section .something-about-container .something-about-paragraph-container {
+    margin-inline: 10%;
+    padding: 0 0 5% 0;
+  }
+}
+
+@media screen and (max-width:1080px) {
+  .home-header {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .home-header .home-navbar {
+    width: 100%;
+  }
+
+  .home-header ul {
+    width: 100%;
+    display: flex;
+    margin-top: 2%;
+    justify-content: right;
+  }
+
+  .home-header ul li {
+    padding-inline: 2%;
+  }
+}
+
+@media screen and (max-width:780px) {
+
+  .hero-title,
+  .hero-paragraph {
+    width: 90%;
+  }
+
+  .home-header ul {
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  .main-section .home-middle-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-section .home-middle-section img {
+    margin-bottom: 6%;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  footer .social-icons-container {
+    width: 100%;
+  }
+
+  footer .social-icons-container a {
+    font-size: 40px;
+  }
+
+}
+
+@media screen and (max-width:470px) {
+
+  .home-navbar ul {
+    flex-direction: column;
+    padding-right: 5%;
+    align-items: end;
+  }
 }
