@@ -50,11 +50,12 @@ h1 {
   list-style-type: none;
 }
 
-.home-header .home-navbar .home-navbar-item>a {
+.home-header .home-navbar .home-navbar-item .home-navbar-item-link {
   text-decoration: none;
   color: var(--non-photo-blue);
   font-family: var(--paragraph-font);
   font-size: 1.5rem;
+  transition-duration: 0.2s;
 }
 
 .home-header .home-navbar .home-navbar-item .home-navbar-item-link:hover {
@@ -100,11 +101,11 @@ h1 {
   background-color: var(--non-photo-blue);
 }
 
-.main-section .home-middle-section img {
+.main-section .home-middle-section .hero-section-avatar {
   padding-inline-start: 5%;
 }
 
-.main-section .home-middle-section p {
+.main-section .home-middle-section .hero-section-paragraph {
   font-family: var(--paragraph-font);
   font-size: 1.2rem;
   text-align: justify;
@@ -132,7 +133,7 @@ h1 {
   background-color: var(--oxford-blue);
 }
 
-.main-section .home-bottom-section .something-about-container h2 {
+.main-section .home-bottom-section .something-about-container .something-about-title {
   margin-bottom: 7%;
   margin-left: 10%;
   font-size: 2rem;
@@ -153,14 +154,14 @@ h1 {
   color: var(--non-photo-blue);
 }
 
-footer {
+.footer {
   background-color: var(--non-photo-blue);
   display: flex;
   justify-content: space-between;
   padding: 5%;
 }
 
-footer div .footer-paragraph {
+.footer div .footer-paragraph {
   font-size: 1.2rem;
   font-family: var(--paragraph-font);
   font-weight: bold;
@@ -169,53 +170,55 @@ footer div .footer-paragraph {
   color: var(--rich-black);
 }
 
-footer .social-icons-container {
+.footer .social-icons-container {
   width: 30%;
   display: flex;
   justify-content: space-evenly;
 }
 
-footer .social-icons-container a i {
+.footer .social-icons-container a i {
   color: var(--oxford-blue);
   font-size: 50px;
+  transition-duration: 0.2s;
 }
 
-footer .social-icons-container a i:hover {
+.footer .social-icons-container a i:hover {
   color: var(--steel-blue);
 }
 
 .main-section .hero-section,
 .main-section .home-middle-section,
 .main-section .home-bottom-section,
-footer {
+.footer {
   scroll-snap-align: center;
 }
 
 /**projects page styles**/
-header .navbar {
+.header .navbar {
   position: absolute;
   width: 100%;
 }
 
-header .navbar ul {
+.header .navbar ul {
   display: flex;
   justify-content: right;
   list-style-type: none;
   width: 100%;
 }
 
-header .navbar ul .navbar-item {
+.header .navbar ul .navbar-item {
   margin-inline: 2%;
   margin-block: 1%;
   font-family: var(--paragraph-font);
 }
 
-header .navbar ul .navbar-item a {
+.header .navbar ul .navbar-item a {
   text-decoration: none;
   color: var(--oxford-blue);
+  transition: 0.2s;
 }
 
-header .navbar ul .navbar-item a:hover {
+.header .navbar ul .navbar-item a:hover {
   color: var(--steel-blue);
 }
 
@@ -253,20 +256,20 @@ header .navbar ul .navbar-item a:hover {
   scroll-snap-align: center;
 }
 
-.projects-bottom-section>img {
+.projects-bottom-section .six-rental {
   width: 50%;
   height: 100vh;
   object-fit: contain;
 }
 
-.projects-bottom-section div p {
+.projects-bottom-section div .six-rental-description {
   padding-left: 10%;
   font-family: var(--paragraph-font);
   color: var(--non-photo-blue);
   padding-right: 10%;
 }
 
-.projects-bottom-section div>img {
+.projects-bottom-section div .six-rental-logo {
   padding-top: 5%;
   width: 150px;
   margin-left: 8%;
@@ -287,45 +290,39 @@ header .navbar ul .navbar-item a:hover {
   background-color: var(--steel-blue);
 }
 
-.projects-air-section>img {
+.projects-air-section .airtic {
   height: 400px;
   width: 70%;
   object-fit: cover;
 }
 
-.projects-air-section div p {
+.projects-air-section div .airtic-description {
   padding-left: 10%;
   font-family: var(--paragraph-font);
   color: var(--non-photo-blue);
-}
-
-.projects-air-section div h2 {
-  padding-top: 5%;
-}
-
-.projects-air-section div p {
   margin-top: 2%;
   margin-left: 2%;
   padding-right: 10%;
 }
 
-.projects-air-section div>img {
+.projects-air-section div .airtic-logo {
   width: 250px;
   height: 80px;
   margin-left: 10%;
 }
 
-.projects-bottom-section div p a,
-.projects-air-section div p a {
+.projects-bottom-section div .six-rental-description a,
+.projects-air-section div .airtic-description a {
   text-decoration: underline;
   color: var(--non-photo-blue);
+  transition: 0.2s;
 }
 
-.projects-air-section div p a:hover {
+.projects-air-section div .airtic-description a:hover {
   color: var(--yale-blue);
 }
 
-.projects-bottom-section div p a:hover {
+.projects-bottom-section div .six-rental-description a:hover {
   color: var(--steel-blue);
 }
 
@@ -340,7 +337,7 @@ header .navbar ul .navbar-item a:hover {
   font-family: var(--title-font);
 }
 
-.skills-container {
+.skill-main-section .skills-container {
   margin-top: 3%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -348,18 +345,18 @@ header .navbar ul .navbar-item a:hover {
   width: 100%;
 }
 
-.skills-container div a img {
+.skill-main-section .skills-container div a img {
   width: 200px;
   height: 200px;
 }
 
-.skills-container div {
+.skill-main-section .skills-container div {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.skills-container div:nth-child(1n +4) {
+.skill-main-section .skills-container div:nth-child(1n +4) {
   margin-top: 5%;
 }
 
@@ -382,7 +379,7 @@ header .navbar ul .navbar-item a:hover {
   justify-content: center;
 }
 
-.about-main-section>.hero-section {
+.about-main-section .hero-section {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -390,13 +387,13 @@ header .navbar ul .navbar-item a:hover {
   padding-top: 3%;
 }
 
-.about-main-section>.hero-section img {
+.about-main-section .hero-section .about-me-photograph {
   object-fit: cover;
   height: 90%;
   width: 40%;
 }
 
-.about-main-section>.hero-section div {
+.about-main-section .hero-section div {
   width: 60%;
 }
 
@@ -407,7 +404,7 @@ header .navbar ul .navbar-item a:hover {
   text-align: justify;
 }
 
-.about-main-section>.bottom-section {
+.about-main-section .bottom-section {
   padding-left: 6%;
 }
 
@@ -444,6 +441,7 @@ header .navbar ul .navbar-item a:hover {
   align-items: center;
   padding: 0 3% 4% 4%;
   color: var(--oxford-blue);
+  background-color: var(--non-photo-blue);
 }
 
 .contact-footer img {
@@ -453,10 +451,8 @@ header .navbar ul .navbar-item a:hover {
 }
 
 .contact-footer form {
-  height: 100%;
   width: 60%;
-  display: flex;
-  flex-direction: column;
+  margin-right: 10%;
 }
 
 .contact-footer form div {
@@ -485,6 +481,7 @@ header .navbar ul .navbar-item a:hover {
   text-align: center;
   background-color: var(--oxford-blue);
   color: var(--non-photo-blue);
+  transition: 0.2s;
 }
 
 .contact-footer button:hover {
@@ -629,15 +626,15 @@ header .navbar ul .navbar-item a:hover {
     margin-bottom: 6%;
   }
 
-  footer {
+  .footer {
     flex-direction: column;
   }
 
-  footer .social-icons-container {
+  .footer .social-icons-container {
     width: 100%;
   }
 
-  footer .social-icons-container a {
+  .footer .social-icons-container a {
     font-size: 40px;
   }
 
@@ -664,7 +661,7 @@ header .navbar ul .navbar-item a:hover {
   }
 
   .skill-main-section h1 {
-    padding-top: 5%;
+    padding-top: 15%;
   }
 
   .about-main-section {
@@ -709,13 +706,21 @@ header .navbar ul .navbar-item a:hover {
     align-items: end;
   }
 
-  .skills-container {
+  .about-main-section .hero-section h1 {
+    margin-top: 10%;
+  }
+
+  .skill-main-section .skills-container {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
   }
 
   .contact-main-section {
     flex-direction: column;
-    padding-block: 5%;
+    padding-block: 15%;
   }
+}
+
+@media screen and (max-width:427px) {
+  .header
 }
