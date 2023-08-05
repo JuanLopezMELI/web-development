@@ -1,0 +1,261 @@
+@import "../utils/variables.scss";
+
+@media screen and (max-width:1655px) {
+    .projects-hero {
+      height: 300vh;
+
+      .projects-air-section {
+        flex-direction: column-reverse;
+
+        div {
+            height: 50%;
+        }
+
+        .airtic {
+            width: 100%;
+            object-fit: contain;
+            height: 50%;
+        }
+      }
+    }
+}
+
+@media screen and (max-width:1170px) {
+    .main-section {
+
+        .home-bottom-section {
+            flex-direction: column;
+            height: fit-content;
+
+            .something-about-photo {
+                display: none;
+            }
+
+            .something-about-container {
+
+                .something-about-title {
+                    margin-top: 5%;
+                }
+
+                .something-about-paragraph-container {
+                    margin-inline: 10%;
+                    padding: 0 0 5% 0;
+                }
+            }
+        }
+    }
+
+  
+    .projects-hero {
+
+        .projects-bottom-section {
+            flex-direction: column;
+            height: 100vh;
+
+            .six-rental {
+                width: 100%;
+                // height: 50%;
+            }
+
+            div {
+                width: 100%;
+                border: none;
+            }
+        }
+    }
+  
+    .skill-main-section {
+      height: fit-content;
+      padding-bottom: 9%;
+    }
+  
+}
+  
+@media screen and (max-width:1080px) {
+    .home-header {
+      width: 100%;
+      height: fit-content;
+
+      .home-navbar {
+        width: 100%;
+      }
+
+      ul {
+        width: 100%;
+        display: flex;
+        margin-top: 2%;
+        justify-content: right;
+
+        li {
+            padding-inline: 2%;
+        }
+      }
+    }
+}
+  
+@media screen and (max-width:950px) {
+    .skill-main-section {
+        .skills-container {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+    }
+  
+    .contact-main-section {
+        .social-icons-container {
+            width: 50%;
+        }
+    }
+}
+  
+@media screen and (max-width:780px) {
+  
+    .hero-title,
+    .hero-paragraph {
+      width: 90%;
+    }
+  
+    .home-header {
+        ul {
+            padding-left: 0;
+            justify-content: center;
+        }
+    }
+  
+    .main-section {
+
+        .hero-section {
+
+            .hero-video {
+                display: none;
+            }
+
+            .hero-video-mobile {
+                display: block;
+                position: absolute;
+                top: 0;
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+            }
+        }
+
+        .home-middle-section {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                margin-bottom: 6%;
+            }
+        }
+    }
+
+    .footer {
+      flex-direction: column;
+
+      .social-icons-container {
+        width: 100%;
+
+        a {
+            font-size: 40px;
+        }
+      }
+    }
+
+    .projects-hero {
+        .projects-air-section {
+            .airtic {
+                object-fit: cover;
+                object-position: 80% 0;
+                height: 45%;
+                width: 100%;
+            }
+
+            >div {
+                padding-top: 10%;
+            }
+        }
+
+        .projects-bottom-section {
+            .six-rental {
+                object-fit: cover;
+                object-position: 80% 0;
+            }
+        }
+    }
+  
+    .skill-main-section {
+        h1 {
+            padding-top: 15%;
+        }
+    }
+  
+    .about-main-section {
+      width: 100vw;
+      height: fit-content;
+      padding-block: 10%;
+
+      .hero-section {
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+
+        div {
+            width: 100%;
+        }
+
+        img {
+            display: none;
+        }
+      }
+    }
+
+    .bottom-section {
+      display: none;
+    }
+  
+    .contact-footer {
+        img {
+            display: none;
+        }
+    }
+  
+    .contact-footer {
+        form {
+            width: 90%;
+        }
+    }
+  
+}
+  
+@media screen and (max-width:470px) {
+  
+    .home-navbar {
+        ul {
+            flex-direction: column;
+            padding-right: 5%;
+            align-items: end;
+        }
+    }
+  
+    .about-main-section {
+        .hero-section {
+            h1 {
+                margin-top: 10%;
+            }
+        }
+    }
+  
+    .skill-main-section {
+        .skills-container {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, 1fr);
+        }
+    }
+  
+    .contact-main-section {
+      flex-direction: column;
+      padding-block: 15%;
+    }
+}

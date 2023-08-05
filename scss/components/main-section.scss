@@ -1,0 +1,101 @@
+@import "../utils/variables.scss";
+@import "../utils/mixins.scss";
+
+.main-section {
+
+  	.hero-section {
+		@include scroll-snap-center;
+		width: 100vw;
+    	height: 100vh;
+  
+		.hero-video {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+  
+		.hero-video-mobile {
+			display: none;
+		}
+  
+		.hero-content {
+			position: absolute;
+			top: 45%;
+			padding-left: 10%;
+			color: $non-photo-blue;
+
+			.hero-title {
+				font-size: 3.5rem;
+			}
+
+			.hero-paragraph {
+				font-size: 1.6rem;
+				font-family: $paragraph-font;
+			}
+		}
+	}
+  
+	.home-middle-section {
+		@include scroll-snap-center;
+		display: flex;
+		align-items: center;
+		width: 100vw;
+		height: 100vh;
+		background-color: $non-photo-blue;
+
+		.hero-section-avatar {
+			padding-inline-start: 5%;
+		}
+
+		.hero-section-paragraph {
+			font-family: $paragraph-font;
+			font-size: 1.2rem;
+			text-align: justify;
+			padding-inline: 5%;
+			color: $rich-black;
+			font-weight: bold;
+		}
+	}
+  
+	.home-bottom-section {
+		@include scroll-snap-center;
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+
+		.something-about-photo {
+			width: 30%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.something-about-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			background-color: $oxford-blue;
+
+			.something-about-title {
+				margin-bottom: 7%;
+				margin-left: 10%;
+				font-size: 2rem;
+				font-family: $title-font;
+				color: $non-photo-blue;
+			}
+
+			.something-about-paragraph-container {
+				text-align: justify;
+				padding-left: 20%;
+				margin-right: 10%;
+
+				.something-about-paragraph {
+					margin-block: 2%;
+					font-family: $paragraph-font;
+					font-weight: bold;
+					color: $non-photo-blue;
+				}
+			}
+		}
+	}
+  
+}

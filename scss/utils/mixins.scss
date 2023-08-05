@@ -1,0 +1,21 @@
+@import "./variables.scss";
+
+@mixin scroll-snap-center {
+    scroll-snap-align: center;
+}
+
+@mixin inline-5 {
+    margin-inline: 5%;
+}
+
+@mixin link {
+    text-decoration: underline;
+    color: $non-photo-blue;
+    transition: 0.2s;
+}
+
+@mixin form-field {
+    border-radius: 5px;
+    border: none;
+    font-family: $paragraph-font;
+}

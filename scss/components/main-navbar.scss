@@ -1,0 +1,32 @@
+@import "../utils/variables.scss";
+
+.header {
+
+    .navbar {
+        position: absolute;
+        width: 100%;
+
+        ul {
+            display: flex;
+            justify-content: right;
+            list-style-type: none;
+            width: 100%;
+
+            .navbar-item {
+                margin-inline: 2%;
+                margin-block: 1%;
+                font-family: $paragraph-font;
+
+                a {
+                    text-decoration: none;
+                    color: $oxford-blue;
+                    transition: 0.2s;
+
+                    &:hover {
+                        color: $steel-blue;
+                    }
+                }
+            }
+        }
+    }
+}

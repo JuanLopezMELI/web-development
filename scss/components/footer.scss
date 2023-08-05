@@ -1,0 +1,41 @@
+@import "../utils/variables.scss";
+@import "../utils/mixins.scss";
+
+.footer {
+    @include scroll-snap-center;
+    background-color: $non-photo-blue;
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+  
+  
+    div {
+        .footer-paragraph {
+            font-size: 1.2rem;
+            font-family: $paragraph-font;
+            font-weight: bold;
+            padding-block: 2%;
+            margin-left: 2%;
+            color: $rich-black;
+        }
+    }
+  
+    .social-icons-container {
+        width: 30%;
+        display: flex;
+        justify-content: space-evenly;
+
+        a {
+            i {
+                color: $oxford-blue;
+                font-size: 50px;
+                transition-duration: 0.2s;
+            }
+
+            &:hover {
+                color: $steel-blue;
+            }
+        }
+    }
+
+}
