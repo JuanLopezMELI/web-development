@@ -228,7 +228,22 @@
     }
   
 }
-  
+@media screen and (max-width:660px) {
+
+    .social-icons-container {
+        height: 50%;
+    }
+
+    .contact-footer {
+        height: auto;
+    }
+
+    .contact-main-section {
+        flex-direction: column;
+        padding-top: 15%;
+    }
+}
+
 @media screen and (max-width:470px) {
   
     .home-navbar {
@@ -254,8 +269,20 @@
         }
     }
   
+}
+
+@media screen and (max-width:470px) and (max-height:915px)  {
     .contact-main-section {
-      flex-direction: column;
-      padding-block: 15%;
+        .contact-paragraph-container {
+            p {
+                width: 100%;
+                font-size: 20px;
+                padding-right: 4%;
+            }
+        }
+
+        .social-icons-container {
+            display: none;
+        }
     }
 }

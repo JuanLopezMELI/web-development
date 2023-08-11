@@ -10,19 +10,22 @@
     color: $oxford-blue;
   
   
-    div {
+    .contact-paragraph-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 4%;
         p {
-            padding-left: 7%;
-            padding-top: 8%;
             font-size: 24px;
-            width: 65%;
+            width: 85%;
             font-family: $paragraph-font;
         }
     }
   
     .social-icons-container {
-        width: 15%;
+        width: 50%;
         display: flex;
+        flex-direction: row;
         justify-content: space-evenly;
         a {
             i {
