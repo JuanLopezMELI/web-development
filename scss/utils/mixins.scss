@@ -1,8 +1,5 @@
 @import "./variables.scss";
 
-@mixin scroll-snap-center {
-    scroll-snap-align: center;
-}
 
 @mixin inline-5 {
     margin-inline: 5%;
